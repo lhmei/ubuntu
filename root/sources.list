@@ -1,0 +1,21 @@
+# deb http://mirrors.iflytek.com/ubuntu/ trusty main universe restricted multiverse # disabled on upgrade to trusty
+# deb-src http://mirrors.iflytek.com/ubuntu/ trusty main universe restricted multiverse # disabled on upgrade to trusty
+# deb http://mirrors.iflytek.com/ubuntu/ trusty-security universe main multiverse restricted # disabled on upgrade to trusty
+# deb-src http://mirrors.iflytek.com/ubuntu/ trusty-security universe main multiverse restricted # disabled on upgrade to trusty
+# deb http://mirrors.iflytek.com/ubuntu/ trusty-updates universe main multiverse restricted # disabled on upgrade to trusty
+# deb http://mirrors.iflytek.com/ubuntu/ trusty-proposed universe main multiverse restricted # disabled on upgrade to trusty
+# deb-src http://mirrors.iflytek.com/ubuntu/ trusty-proposed universe main multiverse restricted # disabled on upgrade to trusty
+# deb http://mirrors.iflytek.com/ubuntu/ trusty-backports universe main multiverse restricted # disabled on upgrade to trusty
+# deb-src http://mirrors.iflytek.com/ubuntu/ trusty-backports universe main multiverse restricted # disabled on upgrade to trusty
+# deb-src http://mirrors.iflytek.com/ubuntu/ trusty-updates universe main multiverse restricted # disabled on upgrade to trusty
+deb http://mirrors.163.com/ubuntu/ trusty main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ trusty-security main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ trusty-backports main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ trusty main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ trusty-security main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ trusty-backports main restricted universe multiverse
+# deb-src [arch=amd64] https://download.docker.com/linux/ubuntu trusty stable
