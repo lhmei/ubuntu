@@ -1,21 +1,25 @@
 #
 # Ubuntu Dockerfile
 #
-# https://github.com/dockerfile/ubuntu
-#
 
 # Pull base image.
-FROM dev.reg.iflytek.com/base/ubuntu:14.04
+FROM ubuntu:14.04
 
 # Install.
 ADD root/sources.list /etc/apt/sources.list
+ADD root/get-pip.py /tmp/get-pip.py
 
 RUN \
   apt-get update && \
   apt-get -y upgrade && \
-  apt-get install -y build-essential && \
-  apt-get install -y curl git vim gdb && \
+  apt-get install -y gcc g++ make && \
+  apt-get install -y git python-dev libssl-dev && \
   rm -rf /var/lib/apt/lists/*
+
+RUN \
+  python /tmp/get-pip.py && \
+  rm /tmp/get-pip.py && \
+  sudo pip install gitpython pykafka
 
 # Set Time Zone
 RUN echo "Asia/Shanghai" > /etc/timezone
